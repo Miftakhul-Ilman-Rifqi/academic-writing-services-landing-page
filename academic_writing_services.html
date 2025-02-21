@@ -1,0 +1,1748 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Jasa Penulisan Profesional</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+        />
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <style>
+            .gradient-bg {
+                background: linear-gradient(120deg, #1e3a8a, #3b82f6, #1e3a8a);
+                background-size: 200% 200%;
+                animation: gradientBG 10s ease infinite;
+            }
+            @keyframes gradientBG {
+                0% {
+                    background-position: 0% 50%;
+                }
+                50% {
+                    background-position: 100% 50%;
+                }
+                100% {
+                    background-position: 0% 50%;
+                }
+            }
+            .hover-float:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.4);
+            }
+            .testimonial-card {
+                transition: all 0.3s ease;
+            }
+            .testimonial-card:hover {
+                transform: scale(1.03);
+            }
+        </style>
+    </head>
+    <body class="bg-gray-50">
+        <nav
+            class="fixed top-0 w-full bg-white shadow-lg z-50 transition-all duration-300"
+            id="navbar"
+        >
+            <div
+                class="container mx-auto px-4 py-3 flex justify-between items-center"
+            >
+                <div class="flex items-center space-x-2">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-8 w-8 text-blue-600"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+                        />
+                    </svg>
+                    <h2 class="text-xl font-bold text-blue-600">AkademikPro</h2>
+                </div>
+
+                <div class="hidden md:flex space-x-6">
+                    <a
+                        href="#layanan"
+                        class="text-gray-600 hover:text-blue-600 transition-colors font-medium"
+                        >Layanan</a
+                    >
+                    <a
+                        href="#portofolio"
+                        class="text-gray-600 hover:text-blue-600 transition-colors font-medium"
+                        >Portofolio</a
+                    >
+                    <a
+                        href="#testimoni"
+                        class="text-gray-600 hover:text-blue-600 transition-colors font-medium"
+                        >Testimoni</a
+                    >
+                    <a
+                        href="#proses"
+                        class="text-gray-600 hover:text-blue-600 transition-colors font-medium"
+                        >Cara Kerja</a
+                    >
+                    <a
+                        href="#harga"
+                        class="text-gray-600 hover:text-blue-600 transition-colors font-medium"
+                        >Harga</a
+                    >
+                </div>
+
+                <a
+                    href="https://wa.me/6281234567890?text=Halo%20kak%2C%20saya%20tertarik%20menggunakan%20jasa%20penulisan%20akademik"
+                    class="hidden md:block px-4 py-2 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-all hover:scale-105"
+                >
+                    Konsultasi Gratis
+                </a>
+
+                <button class="md:hidden text-blue-600" id="mobile-menu-button">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-6 w-6"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"
+                        />
+                    </svg>
+                </button>
+            </div>
+
+            <div
+                class="md:hidden hidden bg-white px-4 py-3 shadow-inner"
+                id="mobile-menu"
+            >
+                <div class="flex flex-col space-y-3">
+                    <a
+                        href="#layanan"
+                        class="text-gray-600 py-2 border-b border-gray-100"
+                        >Layanan</a
+                    >
+                    <a
+                        href="#portofolio"
+                        class="text-gray-600 py-2 border-b border-gray-100"
+                        >Portofolio</a
+                    >
+                    <a
+                        href="#testimoni"
+                        class="text-gray-600 py-2 border-b border-gray-100"
+                        >Testimoni</a
+                    >
+                    <a
+                        href="#proses"
+                        class="text-gray-600 py-2 border-b border-gray-100"
+                        >Cara Kerja</a
+                    >
+                    <a href="#harga" class="text-gray-600 py-2">Harga</a>
+                    <a
+                        href="https://wa.me/6281234567890?text=Halo%20kak%2C%20saya%20tertarik%20menggunakan%20jasa%20penulisan%20akademik"
+                        class="w-full mt-2 px-4 py-2 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 text-center transition-colors"
+                    >
+                        Konsultasi Gratis
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container mx-auto px-4 pt-16">
+            <section
+                class="gradient-bg text-center py-20 px-4 rounded-3xl mt-8 animate__animated animate__fadeIn"
+            >
+                <div class="max-w-4xl mx-auto">
+                    <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">
+                        Solusi
+                        <span id="typed-text" class="text-yellow-300"></span>
+                    </h1>
+                    <p class="text-lg text-white mb-8 max-w-2xl mx-auto">
+                        Kami membantu mahasiswa mengatasi kendala akademik
+                        dengan dukungan penulisan yang legal, etis, dan
+                        berkualitas tinggi.
+                    </p>
+                    <div
+                        class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4"
+                    >
+                        <a
+                            href="https://wa.me/6281234567890?text=Halo%20kak%2C%20saya%20ingin%20konsultasi%20tentang%20tugas%20akademik%20saya"
+                            class="px-8 py-4 bg-white text-blue-600 rounded-lg font-bold hover:bg-gray-100 transition-all hover:scale-105 shadow-lg"
+                        >
+                            <div class="flex items-center justify-center">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="h-5 w-5 mr-2"
+                                    fill="currentColor"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"
+                                    />
+                                </svg>
+                                Konsultasi WhatsApp
+                            </div>
+                        </a>
+                        <a
+                            href="#layanan"
+                            class="px-8 py-4 bg-blue-800 text-white rounded-lg font-bold hover:bg-blue-900 transition-all hover:scale-105 shadow-lg"
+                        >
+                            <div class="flex items-center justify-center">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="h-5 w-5 mr-2"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122"
+                                    />
+                                </svg>
+                                Lihat Layanan
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section
+                class="grid grid-cols-1 md:grid-cols-3 gap-6 my-12"
+                data-aos="fade-up"
+            >
+                <div
+                    class="bg-white p-8 rounded-xl shadow-md text-center hover-float transition-all duration-300"
+                >
+                    <div
+                        class="rounded-full bg-blue-100 w-16 h-16 flex items-center justify-center mx-auto mb-4"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-8 w-8 text-blue-600"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                            />
+                        </svg>
+                    </div>
+                    <h3
+                        class="text-3xl font-bold text-blue-600 counter"
+                        data-target="29"
+                    >
+                        0
+                    </h3>
+                    <p class="text-gray-600 font-medium">Proyek Berhasil</p>
+                </div>
+                <div
+                    class="bg-white p-8 rounded-xl shadow-md text-center hover-float transition-all duration-300"
+                >
+                    <div
+                        class="rounded-full bg-blue-100 w-16 h-16 flex items-center justify-center mx-auto mb-4"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-8 w-8 text-blue-600"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5"
+                            />
+                        </svg>
+                    </div>
+                    <h3
+                        class="text-3xl font-bold text-blue-600 counter"
+                        data-target="100"
+                    >
+                        0
+                    </h3>
+                    <p class="text-gray-600 font-medium">Kepuasan Klien (%)</p>
+                </div>
+                <div
+                    class="bg-white p-8 rounded-xl shadow-md text-center hover-float transition-all duration-300"
+                >
+                    <div
+                        class="rounded-full bg-blue-100 w-16 h-16 flex items-center justify-center mx-auto mb-4"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-8 w-8 text-blue-600"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                            />
+                        </svg>
+                    </div>
+                    <h3 class="text-3xl font-bold text-blue-600">24/7</h3>
+                    <p class="text-gray-600 font-medium">Dukungan Responsif</p>
+                </div>
+            </section>
+
+            <section id="layanan" class="my-20" data-aos="fade-up">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-blue-600 mb-4">
+                        Layanan Kami
+                    </h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">
+                        Kami menawarkan berbagai layanan penulisan akademik
+                        untuk membantu Anda menyelesaikan tugas dengan hasil
+                        yang memuaskan
+                    </p>
+                </div>
+
+                <div
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+                >
+                    <div
+                        class="bg-white p-8 rounded-xl shadow-md hover-float transition-all duration-300"
+                    >
+                        <div
+                            class="rounded-full bg-blue-100 w-16 h-16 flex items-center justify-center mb-6"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-8 w-8 text-blue-600"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                                />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-blue-600 mb-3">
+                            Skripsi & Thesis
+                        </h3>
+                        <p class="text-gray-600 mb-4">
+                            Kami membantu dalam penyusunan skripsi dengan
+                            metodologi penelitian yang tepat, struktur yang
+                            sesuai standar akademik, dan referensi berkualitas.
+                        </p>
+                        <ul class="text-gray-600 space-y-2 mb-6">
+                            <li class="flex items-start">
+                                <svg
+                                    class="h-5 w-5 text-blue-500 mr-2"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M5 13l4 4L19 7"
+                                    ></path>
+                                </svg>
+                                Bab 1-5 Lengkap
+                            </li>
+                            <li class="flex items-start">
+                                <svg
+                                    class="h-5 w-5 text-blue-500 mr-2"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M5 13l4 4L19 7"
+                                    ></path>
+                                </svg>
+                                Referensi Terkini
+                            </li>
+                            <li class="flex items-start">
+                                <svg
+                                    class="h-5 w-5 text-blue-500 mr-2"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M5 13l4 4L19 7"
+                                    ></path>
+                                </svg>
+                                Anti Plagiarisme
+                            </li>
+                        </ul>
+                        <a
+                            href="https://wa.me/6281234567890?text=Halo%20kak%2C%20saya%20tertarik%20dengan%20layanan%20Skripsi%20%26%20Thesis"
+                            class="inline-block text-blue-600 font-medium hover:text-blue-800 transition-colors"
+                        >
+                            <div class="flex items-center">
+                                <span>Konsultasikan Kebutuhan</span>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="h-5 w-5 ml-1"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M17 8l4 4m0 0l-4 4m4-4H3"
+                                    />
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div
+                        class="bg-white p-8 rounded-xl shadow-md hover-float transition-all duration-300"
+                    >
+                        <div
+                            class="rounded-full bg-blue-100 w-16 h-16 flex items-center justify-center mb-6"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-8 w-8 text-blue-600"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"
+                                />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-blue-600 mb-3">
+                            Artikel Ilmiah
+                        </h3>
+                        <p class="text-gray-600 mb-4">
+                            Penyusunan artikel ilmiah untuk publikasi dengan
+                            format yang sesuai standar jurnal nasional dan
+                            internasional.
+                        </p>
+                        <ul class="text-gray-600 space-y-2 mb-6">
+                            <li class="flex items-start">
+                                <svg
+                                    class="h-5 w-5 text-blue-500 mr-2"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M5 13l4 4L19 7"
+                                    ></path>
+                                </svg>
+                                Format Standar Jurnal
+                            </li>
+                            <li class="flex items-start">
+                                <svg
+                                    class="h-5 w-5 text-blue-500 mr-2"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M5 13l4 4L19 7"
+                                    ></path>
+                                </svg>
+                                Analisis Data Terstruktur
+                            </li>
+                            <li class="flex items-start">
+                                <svg
+                                    class="h-5 w-5 text-blue-500 mr-2"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M5 13l4 4L19 7"
+                                    ></path>
+                                </svg>
+                                Metodologi Kuat
+                            </li>
+                        </ul>
+                        <a
+                            href="https://wa.me/6281234567890?text=Halo%20kak%2C%20saya%20tertarik%20dengan%20layanan%20Artikel%20Ilmiah"
+                            class="inline-block text-blue-600 font-medium hover:text-blue-800 transition-colors"
+                        >
+                            <div class="flex items-center">
+                                <span>Konsultasikan Kebutuhan</span>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="h-5 w-5 ml-1"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M17 8l4 4m0 0l-4 4m4-4H3"
+                                    />
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div
+                        class="bg-white p-8 rounded-xl shadow-md hover-float transition-all duration-300"
+                    >
+                        <div
+                            class="rounded-full bg-blue-100 w-16 h-16 flex items-center justify-center mb-6"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-8 w-8 text-blue-600"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"
+                                />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-blue-600 mb-3">
+                            Makalah & Essay
+                        </h3>
+                        <p class="text-gray-600 mb-4">
+                            Pembuatan makalah dan essay dengan argumen yang
+                            kuat, struktur yang jelas, dan referensi terpercaya.
+                        </p>
+                        <ul class="text-gray-600 space-y-2 mb-6">
+                            <li class="flex items-start">
+                                <svg
+                                    class="h-5 w-5 text-blue-500 mr-2"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M5 13l4 4L19 7"
+                                    ></path>
+                                </svg>
+                                Cepat & Tepat Waktu
+                            </li>
+                            <li class="flex items-start">
+                                <svg
+                                    class="h-5 w-5 text-blue-500 mr-2"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M5 13l4 4L19 7"
+                                    ></path>
+                                </svg>
+                                Struktur Logis
+                            </li>
+                            <li class="flex items-start">
+                                <svg
+                                    class="h-5 w-5 text-blue-500 mr-2"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M5 13l4 4L19 7"
+                                    ></path>
+                                </svg>
+                                Revisi Gratis
+                            </li>
+                        </ul>
+                        <a
+                            href="https://wa.me/6281234567890?text=Halo%20kak%2C%20saya%20tertarik%20dengan%20layanan%20Makalah%20%26%20Essay"
+                            class="inline-block text-blue-600 font-medium hover:text-blue-800 transition-colors"
+                        >
+                            <div class="flex items-center">
+                                <span>Konsultasikan Kebutuhan</span>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="h-5 w-5 ml-1"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M17 8l4 4m0 0l-4 4m4-4H3"
+                                    />
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="portofolio" class="my-20" data-aos="fade-up">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-blue-600 mb-4">
+                        Portofolio Kami
+                    </h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">
+                        Beberapa contoh karya yang telah kami selesaikan dengan
+                        hasil memuaskan
+                    </p>
+                </div>
+
+                <div
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+                >
+                    <div
+                        class="bg-white rounded-xl overflow-hidden shadow-md transition-all duration-300 hover:shadow-xl"
+                    >
+                        <div class="aspect-video overflow-hidden">
+                            <img
+                                src="https://images.unsplash.com/photo-1455390582262-044cdead277a"
+                                alt="Portfolio 1"
+                                class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                            />
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-lg font-bold text-blue-600 mb-2">
+                                Skripsi Manajemen Bisnis
+                            </h3>
+                            <p class="text-gray-600 mb-3">
+                                Analisis pengaruh strategi pemasaran digital
+                                terhadap peningkatan penjualan UMKM di masa
+                                pandemi.
+                            </p>
+                            <div class="flex space-x-2">
+                                <span
+                                    class="inline-block px-3 py-1 text-xs font-medium bg-blue-100 text-blue-600 rounded-full"
+                                    >Skripsi</span
+                                >
+                                <span
+                                    class="inline-block px-3 py-1 text-xs font-medium bg-blue-100 text-blue-600 rounded-full"
+                                    >Manajemen</span
+                                >
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-white rounded-xl overflow-hidden shadow-md transition-all duration-300 hover:shadow-xl"
+                    >
+                        <div class="aspect-video overflow-hidden">
+                            <img
+                                src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d"
+                                alt="Portfolio 2"
+                                class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                            />
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-lg font-bold text-blue-600 mb-2">
+                                Artikel Ilmiah Pendidikan
+                            </h3>
+                            <p class="text-gray-600 mb-3">
+                                Efektivitas pembelajaran daring pada mata
+                                pelajaran matematika tingkat SMA selama masa
+                                pandemi.
+                            </p>
+                            <div class="flex space-x-2">
+                                <span
+                                    class="inline-block px-3 py-1 text-xs font-medium bg-blue-100 text-blue-600 rounded-full"
+                                    >Artikel</span
+                                >
+                                <span
+                                    class="inline-block px-3 py-1 text-xs font-medium bg-blue-100 text-blue-600 rounded-full"
+                                    >Pendidikan</span
+                                >
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-white rounded-xl overflow-hidden shadow-md transition-all duration-300 hover:shadow-xl"
+                    >
+                        <div class="aspect-video overflow-hidden">
+                            <img
+                                src="https://images.unsplash.com/photo-1519682337058-a94d519337bc"
+                                alt="Portfolio 3"
+                                class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                            />
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-lg font-bold text-blue-600 mb-2">
+                                Thesis Psikologi
+                            </h3>
+                            <p class="text-gray-600 mb-3">
+                                Pengaruh stress kerja terhadap produktivitas
+                                karyawan pada industri teknologi di Indonesia.
+                            </p>
+                            <div class="flex space-x-2">
+                                <span
+                                    class="inline-block px-3 py-1 text-xs font-medium bg-blue-100 text-blue-600 rounded-full"
+                                    >Thesis</span
+                                >
+                                <span
+                                    class="inline-block px-3 py-1 text-xs font-medium bg-blue-100 text-blue-600 rounded-full"
+                                    >Psikologi</span
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="testimoni" class="my-20" data-aos="fade-up">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-blue-600 mb-4">
+                        Testimoni Klien
+                    </h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">
+                        Apa kata klien kami tentang layanan yang kami berikan
+                    </p>
+                </div>
+
+                <div
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+                >
+                    <div
+                        class="bg-white p-6 rounded-xl shadow-md testimonial-card"
+                    >
+                        <div class="flex items-center mb-4">
+                            <div class="flex text-yellow-400">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="h-5 w-5"
+                                    viewBox="0 0 20 20"
+                                    fill="currentColor"
+                                >
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                    />
+                                </svg>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="h-5 w-5"
+                                    viewBox="0 0 20 20"
+                                    fill="currentColor"
+                                >
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                    />
+                                </svg>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="h-5 w-5"
+                                    viewBox="0 0 20 20"
+                                    fill="currentColor"
+                                >
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                    />
+                                </svg>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="h-5 w-5"
+                                    viewBox="0 0 20 20"
+                                    fill="currentColor"
+                                >
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                    />
+                                </svg>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="h-5 w-5"
+                                    viewBox="0 0 20 20"
+                                    fill="currentColor"
+                                >
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                    />
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 italic mb-4">
+                            "Saya sangat puas dengan hasil skripsi yang dibuat.
+                            Metodologi penelitiannya sangat sesuai dengan
+                            kebutuhan dan revisi dari dosen pembimbing hanya
+                            minor saja. Terima kasih banyak!"
+                        </p>
+                        <div class="flex items-center">
+                            <div
+                                class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold"
+                            >
+                                R
+                            </div>
+                            <div class="ml-3">
+                                <h4 class="font-medium text-gray-800">Rendi</h4>
+                                <p class="text-sm text-gray-500">
+                                    Mahasiswa Manajemen
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-white p-6 rounded-xl shadow-md testimonial-card"
+                    >
+                        <div class="flex items-center mb-4">
+                            <div class="flex text-yellow-400">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="h-5 w-5"
+                                    viewBox="0 0 20 20"
+                                    fill="currentColor"
+                                >
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                    />
+                                </svg>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="h-5 w-5"
+                                    viewBox="0 0 20 20"
+                                    fill="currentColor"
+                                >
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                    />
+                                </svg>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="h-5 w-5"
+                                    viewBox="0 0 20 20"
+                                    fill="currentColor"
+                                >
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                    />
+                                </svg>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="h-5 w-5"
+                                    viewBox="0 0 20 20"
+                                    fill="currentColor"
+                                >
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                    />
+                                </svg>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="h-5 w-5"
+                                    viewBox="0 0 20 20"
+                                    fill="currentColor"
+                                >
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                    />
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 italic mb-4">
+                            "Artikel ilmiah yang dibuat sangat terstruktur dan
+                            menggunakan referensi yang update. Alhamdulillah
+                            langsung diterima untuk publikasi di jurnal
+                            nasional. Tim sangat responsif dan profesional."
+                        </p>
+                        <div class="flex items-center">
+                            <div
+                                class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold"
+                            >
+                                D
+                            </div>
+                            <div class="ml-3">
+                                <h4 class="font-medium text-gray-800">Dewi</h4>
+                                <p class="text-sm text-gray-500">Dosen Muda</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-white p-6 rounded-xl shadow-md testimonial-card"
+                    >
+                        <div class="flex items-center mb-4">
+                            <div class="flex text-yellow-400">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="h-5 w-5"
+                                    viewBox="0 0 20 20"
+                                    fill="currentColor"
+                                >
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                    />
+                                </svg>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="h-5 w-5"
+                                    viewBox="0 0 20 20"
+                                    fill="currentColor"
+                                >
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                    />
+                                </svg>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="h-5 w-5"
+                                    viewBox="0 0 20 20"
+                                    fill="currentColor"
+                                >
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                    />
+                                </svg>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="h-5 w-5"
+                                    viewBox="0 0 20 20"
+                                    fill="currentColor"
+                                >
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                    />
+                                </svg>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="h-5 w-5"
+                                    viewBox="0 0 20 20"
+                                    fill="currentColor"
+                                >
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                    />
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 italic mb-4">
+                            "Makalah selesai tepat waktu, padahal deadline
+                            sangat mepet. Materi yang dibahas sesuai dengan
+                            permintaan dan dosen memberikan nilai A. Puas dengan
+                            layanannya!"
+                        </p>
+                        <div class="flex items-center">
+                            <div
+                                class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold"
+                            >
+                                F
+                            </div>
+                            <div class="ml-3">
+                                <h4 class="font-medium text-gray-800">Fajar</h4>
+                                <p class="text-sm text-gray-500">
+                                    Mahasiswa Teknik
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="proses" class="my-20" data-aos="fade-up">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-blue-600 mb-4">
+                        Cara Kerja
+                    </h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">
+                        Proses sederhana untuk membantu Anda menyelesaikan tugas
+                        akademik
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                    <div
+                        class="bg-white p-6 rounded-xl shadow-md text-center hover-float transition-all duration-300"
+                    >
+                        <div
+                            class="rounded-full bg-blue-100 w-16 h-16 flex items-center justify-center mx-auto mb-4"
+                        >
+                            <span class="text-xl font-bold text-blue-600"
+                                >1</span
+                            >
+                        </div>
+                        <h3 class="text-lg font-bold text-blue-600 mb-2">
+                            Konsultasi
+                        </h3>
+                        <p class="text-gray-600">
+                            Hubungi kami via WhatsApp untuk konsultasi gratis
+                            tentang kebutuhan tugas Anda
+                        </p>
+                    </div>
+
+                    <div
+                        class="bg-white p-6 rounded-xl shadow-md text-center hover-float transition-all duration-300"
+                    >
+                        <div
+                            class="rounded-full bg-blue-100 w-16 h-16 flex items-center justify-center mx-auto mb-4"
+                        >
+                            <span class="text-xl font-bold text-blue-600"
+                                >2</span
+                            >
+                        </div>
+                        <h3 class="text-lg font-bold text-blue-600 mb-2">
+                            Penawaran
+                        </h3>
+                        <p class="text-gray-600">
+                            Kami berikan estimasi biaya dan waktu pengerjaan
+                            yang sesuai kebutuhan
+                        </p>
+                    </div>
+
+                    <div
+                        class="bg-white p-6 rounded-xl shadow-md text-center hover-float transition-all duration-300"
+                    >
+                        <div
+                            class="rounded-full bg-blue-100 w-16 h-16 flex items-center justify-center mx-auto mb-4"
+                        >
+                            <span class="text-xl font-bold text-blue-600"
+                                >3</span
+                            >
+                        </div>
+                        <h3 class="text-lg font-bold text-blue-600 mb-2">
+                            Pengerjaan
+                        </h3>
+                        <p class="text-gray-600">
+                            Tim profesional kami mulai mengerjakan tugas dengan
+                            kualitas terbaik
+                        </p>
+                    </div>
+
+                    <div
+                        class="bg-white p-6 rounded-xl shadow-md text-center hover-float transition-all duration-300"
+                    >
+                        <div
+                            class="rounded-full bg-blue-100 w-16 h-16 flex items-center justify-center mx-auto mb-4"
+                        >
+                            <span class="text-xl font-bold text-blue-600"
+                                >4</span
+                            >
+                        </div>
+                        <h3 class="text-lg font-bold text-blue-600 mb-2">
+                            Revisi & Selesai
+                        </h3>
+                        <p class="text-gray-600">
+                            Kami berikan revisi gratis jika diperlukan hingga
+                            Anda puas dengan hasilnya
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section
+                id="harga"
+                class="my-20 bg-white p-10 rounded-3xl shadow-md"
+                data-aos="fade-up"
+            >
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-blue-600 mb-4">
+                        Harga Terjangkau
+                    </h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">
+                        Investasi untuk kesuksesan akademik Anda dengan harga
+                        yang kompetitif
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div
+                        class="bg-gray-50 p-8 rounded-xl shadow-md hover-float transition-all duration-300 border-t-4 border-blue-400"
+                    >
+                        <h3 class="text-xl font-bold text-blue-600 mb-2">
+                            Makalah & Essay
+                        </h3>
+                        <div class="text-3xl font-bold text-gray-800 mb-4">
+                            Mulai Rp250rb
+                        </div>
+                        <p class="text-gray-600 mb-6">
+                            Harga tergantung panjang halaman dan kompleksitas
+                        </p>
+                        <ul class="text-gray-600 space-y-3 mb-8">
+                            <li class="flex items-start">
+                                <svg
+                                    class="h-5 w-5 text-blue-500 mr-2 mt-0.5"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M5 13l4 4L19 7"
+                                    ></path>
+                                </svg>
+                                Makalah 5-10 halaman
+                            </li>
+                            <li class="flex items-start">
+                                <svg
+                                    class="h-5 w-5 text-blue-500 mr-2 mt-0.5"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M5 13l4 4L19 7"
+                                    ></path>
+                                </svg>
+                                Referensi Min. 5 Sumber
+                            </li>
+                            <li class="flex items-start">
+                                <svg
+                                    class="h-5 w-5 text-blue-500 mr-2 mt-0.5"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M5 13l4 4L19 7"
+                                    ></path>
+                                </svg>
+                                Waktu Pengerjaan 1-3 Hari
+                            </li>
+                            <li class="flex items-start">
+                                <svg
+                                    class="h-5 w-5 text-blue-500 mr-2 mt-0.5"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M5 13l4 4L19 7"
+                                    ></path>
+                                </svg>
+                                1x Revisi Gratis
+                            </li>
+                        </ul>
+                        <a
+                            href="https://wa.me/6281234567890?text=Halo%20kak%2C%20saya%20tertarik%20dengan%20paket%20Makalah%20%26%20Essay"
+                            class="block w-full py-3 text-center bg-blue-600 text-white rounded-lg font-bold hover:bg-blue-700 transition-colors"
+                        >
+                            Pesan Sekarang
+                        </a>
+                    </div>
+
+                    <div
+                        class="bg-blue-50 p-8 rounded-xl shadow-md hover-float transition-all duration-300 border-t-4 border-blue-600 transform scale-105"
+                    >
+                        <div
+                            class="absolute -top-4 right-4 bg-blue-600 text-white px-4 py-1 rounded-full text-sm font-bold"
+                        >
+                            Populer
+                        </div>
+                        <h3 class="text-xl font-bold text-blue-600 mb-2">
+                            Skripsi
+                        </h3>
+                        <div class="text-3xl font-bold text-gray-800 mb-4">
+                            Mulai Rp1.5jt
+                        </div>
+                        <p class="text-gray-600 mb-6">
+                            Harga tergantung jurusan dan tingkat kesulitan
+                        </p>
+                        <ul class="text-gray-600 space-y-3 mb-8">
+                            <li class="flex items-start">
+                                <svg
+                                    class="h-5 w-5 text-blue-500 mr-2 mt-0.5"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M5 13l4 4L19 7"
+                                    ></path>
+                                </svg>
+                                Skripsi Lengkap 5 Bab
+                            </li>
+                            <li class="flex items-start">
+                                <svg
+                                    class="h-5 w-5 text-blue-500 mr-2 mt-0.5"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M5 13l4 4L19 7"
+                                    ></path>
+                                </svg>
+                                Referensi Min. 20 Sumber
+                            </li>
+                            <li class="flex items-start">
+                                <svg
+                                    class="h-5 w-5 text-blue-500 mr-2 mt-0.5"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M5 13l4 4L19 7"
+                                    ></path>
+                                </svg>
+                                Waktu Pengerjaan 7-14 Hari
+                            </li>
+                            <li class="flex items-start">
+                                <svg
+                                    class="h-5 w-5 text-blue-500 mr-2 mt-0.5"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M5 13l4 4L19 7"
+                                    ></path>
+                                </svg>
+                                3x Revisi Gratis
+                            </li>
+                            <li class="flex items-start">
+                                <svg
+                                    class="h-5 w-5 text-blue-500 mr-2 mt-0.5"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M5 13l4 4L19 7"
+                                    ></path>
+                                </svg>
+                                Konsultasi Berkelanjutan
+                            </li>
+                        </ul>
+                        <a
+                            href="https://wa.me/6281234567890?text=Halo%20kak%2C%20saya%20tertarik%20dengan%20paket%20Skripsi"
+                            class="block w-full py-3 text-center bg-blue-600 text-white rounded-lg font-bold hover:bg-blue-700 transition-colors"
+                        >
+                            Pesan Sekarang
+                        </a>
+                    </div>
+
+                    <div
+                        class="bg-gray-50 p-8 rounded-xl shadow-md hover-float transition-all duration-300 border-t-4 border-blue-400"
+                    >
+                        <h3 class="text-xl font-bold text-blue-600 mb-2">
+                            Artikel Ilmiah
+                        </h3>
+                        <div class="text-3xl font-bold text-gray-800 mb-4">
+                            Mulai Rp750rb
+                        </div>
+                        <p class="text-gray-600 mb-6">
+                            Harga tergantung jenis publikasi dan kompleksitas
+                        </p>
+                        <ul class="text-gray-600 space-y-3 mb-8">
+                            <li class="flex items-start">
+                                <svg
+                                    class="h-5 w-5 text-blue-500 mr-2 mt-0.5"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M5 13l4 4L19 7"
+                                    ></path>
+                                </svg>
+                                Artikel Format Jurnal
+                            </li>
+                            <li class="flex items-start">
+                                <svg
+                                    class="h-5 w-5 text-blue-500 mr-2 mt-0.5"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M5 13l4 4L19 7"
+                                    ></path>
+                                </svg>
+                                Referensi Min. 15 Sumber
+                            </li>
+                            <li class="flex items-start">
+                                <svg
+                                    class="h-5 w-5 text-blue-500 mr-2 mt-0.5"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M5 13l4 4L19 7"
+                                    ></path>
+                                </svg>
+                                Waktu Pengerjaan 5-7 Hari
+                            </li>
+                            <li class="flex items-start">
+                                <svg
+                                    class="h-5 w-5 text-blue-500 mr-2 mt-0.5"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M5 13l4 4L19 7"
+                                    ></path>
+                                </svg>
+                                2x Revisi Gratis
+                            </li>
+                        </ul>
+                        <a
+                            href="https://wa.me/6281234567890?text=Halo%20kak%2C%20saya%20tertarik%20dengan%20paket%20Artikel%20Ilmiah"
+                            class="block w-full py-3 text-center bg-blue-600 text-white rounded-lg font-bold hover:bg-blue-700 transition-colors"
+                        >
+                            Pesan Sekarang
+                        </a>
+                    </div>
+                </div>
+
+                <div class="mt-10 text-center">
+                    <p class="text-gray-500 mb-4">
+                        Butuh layanan lain atau paket khusus? Hubungi kami untuk
+                        penawaran personal.
+                    </p>
+                    <a
+                        href="https://wa.me/6281234567890?text=Halo%20kak%2C%20saya%20membutuhkan%20paket%20khusus%20untuk%20tugas%20akademik%20saya"
+                        class="inline-block px-6 py-3 bg-white border border-blue-600 text-blue-600 rounded-lg font-medium hover:bg-blue-50 transition-colors"
+                    >
+                        <div class="flex items-center justify-center">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-5 w-5 mr-2"
+                                fill="currentColor"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"
+                                />
+                            </svg>
+                            Tanya Paket Khusus
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <section class="my-20" data-aos="fade-up">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-blue-600 mb-4">
+                        Pertanyaan Umum
+                    </h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">
+                        Jawaban untuk pertanyaan yang sering ditanyakan
+                    </p>
+                </div>
+
+                <div class="space-y-4 max-w-3xl mx-auto">
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                        <button
+                            class="faq-button w-full px-6 py-4 text-left font-medium flex justify-between items-center focus:outline-none"
+                        >
+                            <span class="text-blue-600"
+                                >Apakah layanan ini legal?</span
+                            >
+                            <svg
+                                class="faq-icon h-5 w-5 text-blue-600 transform transition-transform duration-200"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M19 9l-7 7-7-7"
+                                ></path>
+                            </svg>
+                        </button>
+                        <div class="faq-answer px-6 pb-4 hidden">
+                            <p class="text-gray-600">
+                                Ya, layanan kami bersifat legal sebagai jasa
+                                konsultasi akademik. Kami membantu dalam proses
+                                penelitian, penyusunan, dan penulisan dengan
+                                pendekatan etis. Hasil karya tetap menjadi bahan
+                                pembelajaran yang harus dipahami dan
+                                dipertanggungjawabkan oleh klien.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                        <button
+                            class="faq-button w-full px-6 py-4 text-left font-medium flex justify-between items-center focus:outline-none"
+                        >
+                            <span class="text-blue-600"
+                                >Bagaimana sistem pembayarannya?</span
+                            >
+                            <svg
+                                class="faq-icon h-5 w-5 text-blue-600 transform transition-transform duration-200"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M19 9l-7 7-7-7"
+                                ></path>
+                            </svg>
+                        </button>
+                        <div class="faq-answer px-6 pb-4 hidden">
+                            <p class="text-gray-600">
+                                Sistem pembayaran kami menggunakan DP (Down
+                                Payment) sebesar 50% di awal untuk memulai
+                                pengerjaan, dan pelunasan 50% setelah draft
+                                final selesai dan sebelum pengiriman file
+                                lengkap. Pembayaran dapat dilakukan melalui
+                                transfer bank atau e-wallet.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                        <button
+                            class="faq-button w-full px-6 py-4 text-left font-medium flex justify-between items-center focus:outline-none"
+                        >
+                            <span class="text-blue-600"
+                                >Berapa lama waktu pengerjaan?</span
+                            >
+                            <svg
+                                class="faq-icon h-5 w-5 text-blue-600 transform transition-transform duration-200"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M19 9l-7 7-7-7"
+                                ></path>
+                            </svg>
+                        </button>
+                        <div class="faq-answer px-6 pb-4 hidden">
+                            <p class="text-gray-600">
+                                Waktu pengerjaan bervariasi tergantung jenis dan
+                                kompleksitas tugas. Makalah dan essay biasanya
+                                1-3 hari, artikel ilmiah 5-7 hari, dan
+                                skripsi/thesis 7-14 hari. Untuk deadline yang
+                                lebih ketat, silakan diskusikan dengan kami
+                                untuk solusi terbaik.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                        <button
+                            class="faq-button w-full px-6 py-4 text-left font-medium flex justify-between items-center focus:outline-none"
+                        >
+                            <span class="text-blue-600"
+                                >Bagaimana dengan kerahasiaan data?</span
+                            >
+                            <svg
+                                class="faq-icon h-5 w-5 text-blue-600 transform transition-transform duration-200"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M19 9l-7 7-7-7"
+                                ></path>
+                            </svg>
+                        </button>
+                        <div class="faq-answer px-6 pb-4 hidden">
+                            <p class="text-gray-600">
+                                Kami menjamin kerahasiaan identitas dan data
+                                klien. Semua informasi yang Anda berikan hanya
+                                digunakan untuk keperluan pengerjaan tugas dan
+                                tidak akan dibagikan kepada pihak ketiga. Kami
+                                juga menyediakan perjanjian kerahasiaan jika
+                                diperlukan.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section
+                class="bg-gradient-to-r from-blue-600 to-blue-800 rounded-3xl shadow-xl p-8 text-center my-20"
+                data-aos="fade-up"
+            >
+                <h2 class="text-2xl font-bold text-white mb-4">
+                    Hubungi Kami Sekarang
+                </h2>
+                <p class="text-white opacity-90 mb-2">
+                    WhatsApp: +62 812-3456-7890
+                </p>
+                <p class="text-white opacity-90 mb-6">
+                    Tersedia 24/7 untuk konsultasi
+                </p>
+                <a
+                    href="https://wa.me/6281234567890?text=Halo%20kak%2C%20saya%20ingin%20konsultasi%20tentang%20tugas%20akademik%20saya"
+                    class="inline-block px-8 py-4 bg-white text-blue-600 rounded-lg font-bold hover:bg-gray-100 transition-all hover:scale-105 shadow-lg"
+                >
+                    <div class="flex items-center">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5 mr-2"
+                            fill="currentColor"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"
+                            />
+                        </svg>
+                        Chat Sekarang
+                    </div>
+                </a>
+            </section>
+        </div>
+
+        <footer class="bg-gray-900 text-white py-10">
+            <div class="container mx-auto px-4">
+                <div
+                    class="flex flex-col md:flex-row justify-between items-center"
+                >
+                    <div class="mb-6 md:mb-0">
+                        <div class="flex items-center space-x-2">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-8 w-8 text-blue-400"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+                                />
+                            </svg>
+                            <h2 class="text-xl font-bold text-blue-400">
+                                AkademikPro
+                            </h2>
+                        </div>
+                        <p class="text-gray-400 mt-2">
+                            Solusi terpercaya untuk kebutuhan penulisan akademik
+                            Anda
+                        </p>
+                    </div>
+
+                    <div
+                        class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8"
+                    >
+                        <div>
+                            <h3 class="text-lg font-bold mb-3 text-blue-400">
+                                Kontak
+                            </h3>
+                            <p class="text-gray-400">
+                                WhatsApp: +62 812-3456-7890
+                            </p>
+                            <p class="text-gray-400">Jam Operasional: 24/7</p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-lg font-bold mb-3 text-blue-400">
+                                Layanan
+                            </h3>
+                            <ul class="space-y-2 text-gray-400">
+                                <li>
+                                    <a
+                                        href="#layanan"
+                                        class="hover:text-blue-400 transition-colors"
+                                        >Skripsi & Thesis</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="#layanan"
+                                        class="hover:text-blue-400 transition-colors"
+                                        >Artikel Ilmiah</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="#layanan"
+                                        class="hover:text-blue-400 transition-colors"
+                                        >Makalah & Essay</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                    <p class="text-gray-500">
+                        &copy; 2025 AkademikPro. Semua hak dilindungi.
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                AOS.init({
+                    duration: 800,
+                    easing: "ease-in-out",
+                    once: true,
+                });
+
+                new Typed("#typed-text", {
+                    strings: [
+                        "Akademik Terpercaya",
+                        "Penulisan Profesional",
+                        "Skripsi & Thesis",
+                        "Artikel Ilmiah",
+                    ],
+                    typeSpeed: 60,
+                    backSpeed: 30,
+                    backDelay: 1500,
+                    startDelay: 500,
+                    loop: true,
+                });
+
+                const counters = document.querySelectorAll(".counter");
+                const speed = 200;
+
+                counters.forEach((counter) => {
+                    const animate = () => {
+                        const target = parseInt(
+                            counter.getAttribute("data-target")
+                        );
+                        const count = parseInt(counter.innerText);
+                        const increment = target / speed;
+
+                        if (count < target) {
+                            counter.innerText = Math.ceil(count + increment);
+                            setTimeout(animate, 1);
+                        } else {
+                            counter.innerText = target;
+                        }
+                    };
+                    animate();
+                });
+
+                const mobileMenuButton =
+                    document.getElementById("mobile-menu-button");
+                const mobileMenu = document.getElementById("mobile-menu");
+
+                mobileMenuButton.addEventListener("click", () => {
+                    mobileMenu.classList.toggle("hidden");
+                });
+
+                const navbar = document.getElementById("navbar");
+                window.addEventListener("scroll", () => {
+                    if (window.scrollY > 50) {
+                        navbar.classList.add("py-2");
+                        navbar.classList.remove("py-3");
+                    } else {
+                        navbar.classList.add("py-3");
+                        navbar.classList.remove("py-2");
+                    }
+                });
+
+                const faqButtons = document.querySelectorAll(".faq-button");
+                faqButtons.forEach((button) => {
+                    button.addEventListener("click", () => {
+                        const answer = button.nextElementSibling;
+                        const icon = button.querySelector(".faq-icon");
+
+                        answer.classList.toggle("hidden");
+
+                        if (answer.classList.contains("hidden")) {
+                            icon.classList.remove("rotate-180");
+                        } else {
+                            icon.classList.add("rotate-180");
+                        }
+                    });
+                });
+            });
+        </script>
+    </body>
+</html>
